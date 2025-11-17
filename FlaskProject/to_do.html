@@ -49,6 +49,9 @@
         <label>Item UUID</label>
         <input type="text" id="itemUUID" placeholder="Enter item UUID" required>
 
+        <label>Item Hash</label>
+        <input type="text" id="itemHash" placeholder="Enter item hash" required>
+
         <label>Item Name</label>
         <input type="text" id="itemName" placeholder="Enter item name" required>
 
@@ -64,6 +67,7 @@
     e.preventDefault();
     const id = document.getElementById("itemId").value;
     const uuid = document.getElementById("itemUUID").value;
+    const hash = document.getElementById("itemHash").value;
     const name = document.getElementById("itemName").value;
     const desc = document.getElementById("itemDescription").value;
 
@@ -71,6 +75,7 @@
     alert("To-Do Added:\n\n" +
     "Item ID: " + id + "\n" +
     "UUID: " + uuid + "\n" +
+    "Hash: " + hash + "\n" +
     "Name: " + name + "\n" +
     "Description: " + desc);
     });
