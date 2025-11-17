@@ -101,6 +101,3 @@ def success():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-# Ensure you run this script with the same Python interpreter where you installed pymongo.
-# If you still see 'unresolved reference' errors, check your IDE's interpreter settings or run 'python -m pip install pymongo' with the correct python.
